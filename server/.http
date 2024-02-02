@@ -1,0 +1,46 @@
+## GET products[GET]
+GET http://localhost:5000/api/products
+
+### GET item[GET]
+GET http://localhost:5000/api/products/60d5f99eb22c650a5c0a7b80
+
+### CREATE products[POST]
+POST http://localhost:5000/api/products/
+Content-Type: 'application/json'
+
+{
+    "product_id":"3",
+    "title":"Oppo A12 (3GB/32GB)",
+    "description":"Điện Thoại Oppo A12 (3GB/32GB) - Hàng Chính Hãng",
+    "content":"Oppo",
+    "colors":["red","yellow","black"],
+    "sizes":["XL","L","M","XM","LX"],
+    "salePrice":20,
+    "images":[
+         "https://salt.tikicdn.com/cache/64x64/ts/product/aa/f2/95/c0c73883ea383b2eedbeda927ab615dd.jpg",
+         "https://salt.tikicdn.com/cache/280x280/ts/product/77/56/ca/e79e12187206e312db94905e98504acc.jpg",
+    ],
+    "price":2420000,
+
+}
+### EDIT products[PUT]
+PUT http://localhost:5000/api/products/60d5f99eb22c650a5c0a7b80
+Content-Type: 'application/json'
+
+{
+    "product_id":"1",
+    "title":"Oppo A12 (3GB/32GB) aadwa",
+    "description":"Điện Thoại Oppo A12 (3GB/32GB) - Hàng Chính Hãng",
+    "content":"Oppo",
+    "colors":["red","yellow","black"],
+    "sizes":["XL","L","M","XM","LX update"],
+    "salePrice":20,
+    "images":[
+         "https://salt.tikicdn.com/cache/64x64/ts/product/aa/f2/95/c0c73883ea383b2eedbeda927ab615dd.jpg",
+         "https://salt.tikicdn.com/cache/280x280/ts/product/77/56/ca/e79e12187206e312db94905e98504acc.jpg",
+    ],
+    "price":2420000,
+
+}
+### DELETE products[DELETE]
+DELETE http://localhost:5000/api/products/60d5f6ec53f91e1074265134
