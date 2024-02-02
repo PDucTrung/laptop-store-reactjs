@@ -1,7 +1,3 @@
-# DATN-REACTJS
-#Sell Laptop
-
-
 ## Getting Started
 * First, create .env file example:
 ```bash
